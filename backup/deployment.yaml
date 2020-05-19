@@ -21,7 +21,7 @@ spec:
         app: todo-web-application-h2
     spec:
       containers:
-      - image: atingupta2005/todo-web-application-h2:Always
+      - image: atingupta2005/todo-web-application-h2:latest
         imagePullPolicy: Always
         name: todo-web-application-h2
       restartPolicy: Always
