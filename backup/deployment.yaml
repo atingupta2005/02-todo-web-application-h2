@@ -21,8 +21,8 @@ spec:
         app: todo-web-application-h2
     spec:
       containers:
-      - image: atingupta2005/todo-web-application-h2:0.0.1-SNAPSHOT
-        imagePullPolicy: IfNotPresent
+      - image: atingupta2005/todo-web-application-h2:Always
+        imagePullPolicy: Always
         name: todo-web-application-h2
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
