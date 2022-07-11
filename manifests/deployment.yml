@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: javaapp75 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: javaapp75
+  template:
+    metadata:
+      labels:
+        app: javaapp75 
+    spec:
+      containers:
+        - name: javaapp75 
+          image: acratinkh612.azurecr.io/javaapp75
+          ports:
+          - containerPort: 8080
